@@ -275,13 +275,7 @@ body {
     padding: 8px 2px !important;
     width: 100%;
   }
-  .navbar.horizontal-mobile {
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    gap: 12px !important;
-    padding: 8px 2px !important;
-  }
+
   .site-title {
     font-size: 1rem;
     margin-top: 4px;
