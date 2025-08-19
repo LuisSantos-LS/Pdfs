@@ -1,3 +1,7 @@
+  .logo-esquerda,
+  .logo-direita {
+    display: none !important;
+  }
 
   /* Alinhamento horizontal de logos, título e subtítulo */
   .container {
