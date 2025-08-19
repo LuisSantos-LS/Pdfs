@@ -44,11 +44,9 @@
     }
     .logo-esquerda {
       margin-right: 0;
-      display: none;
     }
     .logo-direita {
       margin-left: 0;
-      display: none;
     }
     .logo-esquerda,
     .logo-direita {
@@ -298,7 +296,6 @@ body {
   .logo-esquerda,
   .logo-direita {
     width: 24px;
-    display: none;
   }
   .menu button {
     font-size: 0.8rem;
