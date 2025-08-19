@@ -261,12 +261,12 @@ body {
 
 @media (max-width: 600px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
     padding: 8px 2px;
     gap: 8px;
   }
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
     padding: 8px 2px;
   }
