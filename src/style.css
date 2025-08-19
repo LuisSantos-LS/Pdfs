@@ -4,7 +4,7 @@
     background-color: #1f1f20ff;
     color: #ffffff;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Roboto", sans-serif;
