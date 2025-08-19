@@ -1,41 +1,62 @@
-.logo-canto {
-  position: fixed;
-  top: 18px;
-  width: 80px;
-  height: auto;
-  z-index: 100;
-  opacity: 0.92;
-  transition: transform 0.2s;
-}
-.logo-canto:hover {
-  transform: scale(1.07);
-  opacity: 1;
-}
-.logo-esquerda {
-  left: 18px;
-}
-.logo-direita {
-  right: 18px;
-}
 
-@media (max-width: 600px) {
-  .logo-canto {
-    width: 54px;
-    top: 8px;
+  /* Alinhamento horizontal de logos, título e subtítulo */
+  .container {
+    background-color: #1f1f20ff;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #1f1f20ff;
+    border-radius: 8px;
+    max-width: 2200px;
+    margin: 0 auto;
+    padding: 0 16px;
   }
-  .logo-esquerda {
-    left: 6px;
-  }
-  .logo-direita {
-    right: 6px;
-  }
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+    justify-content: space-between;
+    padding: 12px 16px;
 }
-.site-subtitle {
-  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
+  .logo-esquerda,
+  .logo-direita {
+    width: 80px;
+    height: auto;
+    opacity: 0.92;
+    transition: transform 0.2s, opacity 0.2s;
+    
+  }
+  
+  .logo-esquerda:hover,
+  .logo-direita:hover {
+    transform: scale(1.07);
+    opacity: 1;
+  }
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: row;
+      align-items: center;
+      padding: 0 4px;
+    }
+    .logo-esquerda {
+      margin-right: 0;
+    }
+    .logo-direita {
+      margin-left: 0;
+    }
+    .logo-esquerda,
+    .logo-direita {
+      width: 48px;
+    }
+  }
+  p {
   color: #2196f3;
   text-align: center;
+  font-size: 12;
   margin-bottom: 18px;
   margin-top: 0;
   letter-spacing: 1px;
@@ -54,13 +75,12 @@
   }
 }
 .site-title {
-  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-family: "Roboto", "Segoe UI", Arial, sans-serif;
   font-size: 2.8rem;
   font-weight: 900;
   color: #1976d2;
   text-align: center;
-  margin-top: 32px;
-  margin-bottom: 8px;
+
   letter-spacing: 2px;
   text-shadow: 0 2px 12px rgba(25, 118, 210, 0.18), 0 1px 0 #fff;
   background: linear-gradient(90deg, #1976d2 60%, #2196f3 100%);
@@ -92,9 +112,9 @@ body {
   background-color: #313132ff;
 }
 @media (max-width: 900px) {
-    body {
-  background-color: #313132ff;
-}
+  body {
+    background-color: #313132ff;
+  }
   .pdf-list {
     gap: 18px;
   }
@@ -107,9 +127,9 @@ body {
 }
 
 @media (max-width: 600px) {
-    body {
-  background-color: #313132ff;
-}
+  body {
+    background-color: #313132ff;
+  }
   .pdf-list {
     gap: 12px;
     flex-wrap: wrap;
@@ -128,7 +148,7 @@ body {
 .pdf-card {
   background: linear-gradient(135deg, #23232b 80%, #313132 100%);
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
   border: 1.5px solid #1976d2;
   padding: 28px 22px 22px 22px;
   margin: 0;
@@ -143,7 +163,7 @@ body {
   position: relative;
 }
 .pdf-card:hover {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
   transform: translateY(-4px) scale(1.03);
   border-color: #1976d2;
 }
@@ -165,7 +185,7 @@ body {
   font-weight: 600;
   font-size: 1rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   border: none;
   display: block;
@@ -173,9 +193,9 @@ body {
 .pdf-card-link:hover {
   background: linear-gradient(90deg, #2196f3 80%, #1976d2 100%);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-}
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
 
 body {
   background-color: #313132ff;
@@ -227,13 +247,14 @@ body {
     font-weight: 600;
     padding: 12px 24px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
     transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
     outline: none;
     margin: 0 2px;
     letter-spacing: 0.5px;
   }
-  & button:hover, & button:focus {
+  & button:hover,
+  & button:focus {
     background: linear-gradient(90deg, #2196f3 80%, #1976d2 100%);
     color: #fff;
     border-color: #2196f3;
