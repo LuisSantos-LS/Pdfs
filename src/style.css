@@ -268,11 +268,11 @@ body {
     gap: 8px;
   }
   .navbar {
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    gap: 12px !important;
-    padding: 8px 2px !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 2px;
     width: 100%;
   }
 
