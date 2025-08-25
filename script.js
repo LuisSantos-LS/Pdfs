@@ -50,6 +50,13 @@ const pdfsOUTROS = [
   },
   { nome: "NSCA 54-3-TACF", url: "src/pdfs/OUTROS/NSCA_54-3.pdf" },
   { nome: "RUMAER", url: "src/pdfs/OUTROS/rumaer.pdf" },
+  { nome: "RISAER", url: "src/pdfs/OUTROS/cfc_cm_risaer.pdf" },
+  { nome: "CBA - Codigo Brasileiro de Aeronáutica", url: "src/pdfs/OUTROS/codigo_brasileiro_aeronautica.pdf" },
+  { nome: "Codigo Penal Militar", url: "src/pdfs/OUTROS/codigo_penal_militarpdf.pdf" },
+  { nome: "Codigo de Processo Penal Militar", url: "src/pdfs/OUTROS/CodigoProcessoPenalMitar.pdf" },
+  { nome: "ICA 111-6 - PATD", url: "src/pdfs/OUTROS/ICA 111-6 - PATD.pdf" },
+  { nome: "RCONT", url: "src/pdfs/OUTROS/RCONT.pdf" },
+  { nome: "RDAER", url: "src/pdfs/OUTROS/RDAER.pdf" },
 ];
 
 function mostrarPDFs(lista) {
